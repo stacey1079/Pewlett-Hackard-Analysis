@@ -1,7 +1,7 @@
 -- Deliverable 1
--- retirees table
+-- retirement_titles table
 SELECT e.emp_no, e.first_name, e.last_name, t.title, t.from_date, t.to_date
-INTO retirees
+INTO retirement_titles
 FROM titles AS t
 JOIN employees AS e
 ON (e.emp_no = t.emp_no)
